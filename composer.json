@@ -1,0 +1,15 @@
+{
+    "name": "kennisnet/comscore",
+    "type": "yourls-plugin",
+    "description": "Yourls plugin that logs redirects in ComScore",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Frank Matheron",
+            "email": "frankmatheron@gmail.com"
+        }
+    ],
+    "require": {
+
+    }
+}
