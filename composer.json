@@ -1,5 +1,5 @@
 {
-    "name": "kennisnet/comscore",
+    "name": "kennisnet/yourls-comscore",
     "type": "yourls-plugin",
     "description": "Yourls plugin that logs redirects in ComScore",
     "license": "proprietary",
