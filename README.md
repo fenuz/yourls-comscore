@@ -10,7 +10,7 @@ The Yourls-comscore plugin is configured using defined constants in
 --------------------------|--------------------------------------------------------
  COMSCORE_URL             | The ComScore tracking URL. This parameter is mandatory.
  COMSCORE_USE_COOKIES     | TRUE to use cookies when visiting the tracking URL. Default: `true`.
- COMSCORE_COOKIES_FILE    | Path to the file in which the cookies are stored. Default: `user/comscore.cookies`.
+ COMSCORE_COOKIE_FILE     | Path to the file in which the cookies are stored. Default: `user/comscore.cookies`.
  COMSCORE_HTTP_PROXY_HOST | Optional hostname for the http proxy that should be used to get the tracking URL.
  COMSCORE_HTTP_PROXY_PORT | Optional port for the http proxy that should be used to get the tracking URL.
 
@@ -34,7 +34,7 @@ and the current `time()`.
     // define('COMSCORE_USE_COOKIES', true);
 
     // Path to the file in which the cookies are stored.
-    define('COMSCORE_COOKIES_FILE', '/path/to/the/cookies/file');
+    define('COMSCORE_COOKIE_FILE', '/path/to/the/cookies/file');
 
     // Optional proxy settings.
     define('COMSCORE_HTTP_PROXY_HOST', 'proxy.mydomain.com');
