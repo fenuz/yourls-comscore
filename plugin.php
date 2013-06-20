@@ -98,6 +98,6 @@ if (defined('COMSCORE_URL')) {
 
         curl_close($ch);
     }
-    yourls_add_action('redirect_shorturl', '_comscore_log_redirect');
+    yourls_add_action('redirect_shorturl', '_comscore_log_redirect', 0);
 
 }
