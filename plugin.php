@@ -27,7 +27,7 @@ if (!defined('COMSCORE_ADD_DOT_TO_CHARSET')) {
 if (COMSCORE_ADD_DOT_TO_CHARSET) {
     yourls_add_filter( 'get_shorturl_charset', '_comscore_dot_in_charset' );
     function _comscore_dot_in_charset( $in ) {
-        return $in.'-';
+        return $in.'.';
     }
 }
 
