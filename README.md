@@ -6,13 +6,14 @@ Yourls-comscore plugin
 The Yourls-comscore plugin is configured using defined constants in 
 `user/config.php`. The following options are available:
 
- Name                     | Description 
---------------------------|--------------------------------------------------------
- COMSCORE_URL             | The ComScore tracking URL. This parameter is mandatory.
- COMSCORE_USE_COOKIES     | TRUE to use cookies when visiting the tracking URL. Default: `true`.
- COMSCORE_COOKIE_FILE     | Path to the file in which the cookies are stored. Default: `user/comscore.cookies`.
- COMSCORE_HTTP_PROXY_HOST | Optional hostname for the http proxy that should be used to get the tracking URL.
- COMSCORE_HTTP_PROXY_PORT | Optional port for the http proxy that should be used to get the tracking URL.
+ Name                        | Description 
+-----------------------------|--------------------------------------------------------
+ COMSCORE_URL                | The ComScore tracking URL. This parameter is mandatory.
+ COMSCORE_USE_COOKIES        | TRUE to use cookies when visiting the tracking URL. Default: `true`.
+ COMSCORE_COOKIE_FILE        | Path to the file in which the cookies are stored. Default: `user/comscore.cookies`.
+ COMSCORE_HTTP_PROXY_HOST    | Optional hostname for the http proxy that should be used to get the tracking URL.
+ COMSCORE_HTTP_PROXY_PORT    | Optional port for the http proxy that should be used to get the tracking URL.
+ COMSCORE_ADD_DOT_TO_CHARSET | TRUE to add . to the allowed charset for shorturls. Default: `true`.
 
 These configuration options should be set in the YOURLS `user/config.php` file.
 
@@ -39,5 +40,8 @@ and the current `time()`.
     // Optional proxy settings.
     define('COMSCORE_HTTP_PROXY_HOST', 'proxy.mydomain.com');
     define('COMSCORE_HTTP_PROXY_PORT', '80');
+    
+    // Allow the use of dot characters in shorturls.
+    define('COMSCORE_ADD_DOT_TO_CHARSET', true);
 
 ```
