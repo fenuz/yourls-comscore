@@ -20,6 +20,17 @@ if (!defined('COMSCORE_HTTP_PROXY_PORT')) {
     define('COMSCORE_HTTP_PROXY_PORT', false);
 }
 
+if (!defined('COMSCORE_ADD_DOT_TO_CHARSET')) {
+    define('COMSCORE_ADD_DOT_TO_CHARSET', true);
+}
+
+if (COMSCORE_ADD_DOT_TO_CHARSET) {
+    yourls_add_filter( 'get_shorturl_charset', '_comscore_dot_in_charset' );
+    function _comscore_dot_in_charset( $in ) {
+        return $in.'-';
+    }
+}
+
 if (defined('COMSCORE_URL')) {
 
     if (!defined('COMSCORE_COOKIE_FILE')) {
